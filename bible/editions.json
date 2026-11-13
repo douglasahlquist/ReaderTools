@@ -1,0 +1,27 @@
+{
+  "_about": "Named sets of versions for Bible pages. The default edition's pages are romans-12.md; another edition's are romans-12.<name>.md. The app lists a passage once and switches between its editions on the page. Order here is the order of the app's menu. zh: cuv (simplified), cuv-trad (traditional), or both (the first is the main line). en, greek, hebrew: one or more, comma-separated, or none.",
+  "default": "study",
+  "editions": {
+    "study": {
+      "title": "Study",
+      "zh": "cuv,cuv-trad",
+      "en": "web",
+      "greek": "sblgnt",
+      "hebrew": "wlc"
+    },
+    "classic": {
+      "title": "Classic",
+      "zh": "cuv",
+      "en": "kjv",
+      "greek": "tr",
+      "hebrew": "wlc"
+    },
+    "basic": {
+      "title": "Basic English",
+      "zh": "cuv",
+      "en": "bbe",
+      "greek": "none",
+      "hebrew": "none"
+    }
+  }
+}

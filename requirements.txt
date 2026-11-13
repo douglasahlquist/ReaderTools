@@ -1,0 +1,3 @@
+pypinyin>=0.50
+jieba>=0.42
+opencc-python-reimplemented>=0.1.7

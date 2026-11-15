@@ -1,0 +1,204 @@
+goal: Use 把 to say what you do to something, and 被 to say what happened to it; move, hang, push, press and tidy things.
+
+@word 把 | (puts the object before the verb); to hold
+把。 | Ba.
+把 门 开开。 | Open the door.
+请 把 书 给 我。 | Please give me the book.
+我 把 茶 喝 完 了。 | I finished the tea.
+你 把 手机 放 在 哪儿 了？ | Where did you put your phone?
+别 把 衣服 放 在 床 上。 | Don't put the clothes on the bed.
+他 把 我 的 名字 写 错 了。 | He wrote my name wrong.
+妈妈 把 饭 做 好 了。 | Mom has made the meal.
+我 把 作业 做 完 了。 | I've finished my homework.
+
+@word 被 | (marks the passive: “by”); to be …ed
+被。 | Bei.
+我 的 手机 被 他 拿 走 了。 | My phone was taken by him.
+水果 被 孩子们 吃 完 了。 | The fruit was eaten up by the children.
+我 的 自行车 被 人 骑 走 了。 | Someone rode off with my bike.
+那 本 书 被 借 走 了。 | That book has been borrowed.
+门 被 风 开开 了。 | The door was blown open by the wind.
+他 被 老师 叫 到 前边 去 了。 | He was called up to the front by the teacher.
+我 的 名字 被 写 错 了。 | My name was written wrong.
+
+@word 放到 | to put (into, onto)
+放到。 | Put it there.
+把 书 放到 桌子 上。 | Put the book on the table.
+把 水果 放到 桌子 上。 | Put the fruit on the table.
+我 把 钱 放到 哪儿 了？ | Where did I put the money?
+请 把 椅子 放到 这儿。 | Please put the chair here.
+他 把 手机 放到 包 里 了。 | He put his phone in his bag.
+别 把 杯子 放到 电脑 旁边。 | Don't put the cup next to the computer.
+把 东西 放到 车 上 吧。 | Put the things in the car.
+
+@word 搬 | to move (something heavy); to move house
+搬。 | Move it.
+这 个 桌子 太 重 了， 我 搬 不 动。 | This table is too heavy; I can't move it.
+我们 一起 把 床 搬 到 那边 吧。 | Let's move the bed over there together.
+你 能 帮 我 搬 一 下 吗？ | Can you help me move this?
+他 把 椅子 搬 出去 了。 | He moved the chair out.
+明天 我们 要 搬 到 新 房子。 | Tomorrow we're moving into a new house.
+他们 去年 搬 到 北京 了。 | They moved to Beijing last year.
+这些 书 都 要 搬 走。 | All these books have to be moved out.
+
+@word 挂 | to hang; to hang up (the phone)
+挂。 | Hang it up.
+把 衣服 挂 好。 | Hang your clothes up properly.
+我 把 地图 挂 在 墙 上 了。 | I hung the map on the wall.
+他 把 包 挂 在 门 上。 | He hung his bag on the door.
+我们 家 挂 着 很 多 照片。 | Lots of photos hang in our home.
+她 说 完 就 挂 了 电话。 | She hung up as soon as she'd said it.
+先 别 挂， 我 还 有 话 说。 | Don't hang up yet — I have something else to say.
+把 衣服 挂 在 门 后边 吧。 | Hang the clothes behind the door.
+
+@word 推开 | to push open; to push away
+推开。 | Push it open.
+他 推开 门 走 了 进来。 | He pushed the door open and came in.
+请 把 门 推开。 | Please push the door open.
+门 推 不 开。 | The door won't push open.
+她 推开 我 的 手。 | She pushed my hand away.
+我 推开 门， 外边 下雪 了。 | I pushed the door open — it was snowing outside.
+门 被 风 推开 了。 | The door was pushed open by the wind.
+你 推开 看看。 | Push it open and have a look.
+
+@word 拍 | to pat; to clap; to take (a photo); to film
+拍。 | Clap.
+我们 拍 照片 吧！ | Let's take a picture!
+大家 拍拍 手！ | Everyone clap!
+他 拍 了 拍 我 的 头。 | He patted me on the head.
+他 喜欢 拍 小 动物。 | He likes taking pictures of small animals.
+这 个 电影 是 在 北京 拍 的。 | This film was shot in Beijing.
+别 拍 了， 我们 走 吧！ | Stop taking pictures — let's go!
+
+@word 抓 | to grab; to catch; to scratch
+抓。 | Grab it.
+小 猫 在 抓 鱼。 | The kitten is trying to catch fish.
+他 一 下 就 抓 到 了 球。 | He caught the ball at once.
+别 抓 我 的 头发！ | Don't grab my hair!
+孩子 抓 着 妈妈 的 手。 | The child is holding Mom's hand.
+他 抓 了 一 把 米。 | He grabbed a handful of rice.
+那 个 人 被 抓 了。 | That man was caught.
+猫 抓 了 我 一 下。 | The cat scratched me.
+
+@word 抓住 | to catch hold of; to seize
+抓住。 | Hold on.
+抓住 我 的 手！ | Grab my hand!
+他 抓住 了 球。 | He caught the ball.
+我 没 抓住， 杯子 掉 了。 | I didn't catch it and the cup fell.
+抓住 这 个 机会。 | Seize this chance.
+他 一 下 就 抓住 了 问题。 | He grasped the problem at once.
+狗 被 他 抓住 了。 | The dog was caught by him.
+上 车 的 时候 要 抓住 门 旁边 的 地方。 | Hold on beside the door when getting on.
+
+@word 按 | to press; to push (a button)
+按。 | Press.
+请 按 这 个 地方。 | Please press here.
+按 一 下 就 开 了。 | Press once and it opens.
+我 按 了 很 多 次， 电视 还是 不 开。 | I pressed many times but the TV still won't turn on.
+别 按 那 个！ | Don't press that one!
+我 按 了 一 下， 门 就 开 了。 | I pressed it and the door opened.
+他 把 手 按 在 我 的 头 上。 | He put his hand on my head.
+按 手机 上 这 个 字。 | Press this word on the phone.
+
+@word 压 | to press down; to weigh down; pressure
+压。 | Press down.
+别 把 书 压 在 照片 上。 | Don't put the books on top of the photos.
+我 的 包 被 压 坏 了。 | My bag was squashed.
+他 用 手 压 着 纸。 | He held the paper down with his hand.
+东西 太 多 了， 把 包 压 坏 了。 | Too many things broke the bag.
+衣服 被 压 了 一 晚上。 | The clothes were squashed all night.
+小心， 别 压 到 孩子 的 手。 | Careful — don't press on the child's hand.
+上边 不 能 压 东西。 | Nothing may be put on top.
+
+@word 整理 | to tidy up; to put in order
+整理。 | Tidy up.
+我 要 整理 一 下 房间。 | I need to tidy my room.
+你 的 桌子 该 整理 了。 | Your desk needs tidying.
+妈妈 在 整理 衣服。 | Mom is sorting the clothes.
+把 书 整理 好， 再 出去 玩儿。 | Put your books in order, then go out and play.
+我 每 个 星期 六 都 整理 房间。 | I tidy my room every Saturday.
+他 把 照片 都 整理 好 了。 | He's put all the photos in order.
+这些 东西 太 多 了， 需要 整理 一 下。 | There's too much stuff here; it needs tidying.
+
+@word 衣架 | clothes hanger; clothes rack
+衣架。 | Hanger.
+衣服 挂 在 衣架 上。 | The clothes hang on hangers.
+我 需要 几 个 衣架。 | I need a few hangers.
+衣架 在 门 后边。 | The clothes rack is behind the door.
+把 衣架 给 我， 我 来 挂。 | Give me a hanger — I'll hang it.
+这 个 衣架 太 小 了。 | This hanger is too small.
+他 买 了 十 个 新 衣架。 | He bought ten new hangers.
+衣架 上 挂 着 我 的 大衣。 | My coat is on the rack.
+
+@word 书架 | bookshelf
+书架。 | Bookshelf.
+书 在 书架 上。 | The books are on the shelf.
+请 把 书 放到 书架 上。 | Please put the books on the shelf.
+我 的 书架 太 小 了。 | My bookshelf is too small.
+书架 上 有 很 多 中文 书。 | There are lots of Chinese books on the shelf.
+我们 把 书架 搬 到 那边 吧。 | Let's move the bookshelf over there.
+他 每 个 月 整理 一 次 书架。 | He tidies his bookshelf once a month.
+书架 最 上边 是 我 爸爸 的 书。 | The top of the bookshelf is my dad's books.
+
+@word 补 | to mend; to fill in; to make up for
+补。 | Mend it.
+妈妈 在 补 衣服。 | Mom is mending clothes.
+这 个 地方 坏 了， 要 补 一 下。 | This spot is damaged and needs mending.
+我 昨天 没 来， 今天 要 补 课。 | I missed yesterday, so I need to make up the lesson today.
+请 把 名字 补 上。 | Please fill in the name.
+少 了 一 个 字， 我 补 上 了。 | A character was missing; I filled it in.
+他 病 了， 下 个 星期 补 考。 | He's sick, so he'll take the make-up test next week.
+吃 点儿 水果， 补 一 下。 | Eat some fruit to build yourself up.
+
+@word 修 | to repair; to fix; to build
+修。 | Fix it.
+我 的 自行车 坏 了， 你 能 修 吗？ | My bike's broken — can you fix it?
+电脑 修 好 了。 | The computer is fixed.
+他 把 手机 拿 去 修 了。 | He took his phone to be repaired.
+这 条 路 正在 修。 | This road is being built.
+爸爸 什么 都 会 修。 | Dad can fix anything.
+这 个 电视 修 不 好 了。 | This TV can't be fixed.
+修 一 下 要 多少 钱？ | How much does it cost to fix?
+
+@word 张 | (measure word for flat things: paper, photos, tables, beds)
+张。 | Zhang.
+一 张 纸。 | A sheet of paper.
+我 给 你们 拍 一 张 照片 吧。 | Let me take a photo of you.
+这 张 照片 是 在 哪儿 拍 的？ | Where was this photo taken?
+墙 上 挂 着 一 张 地图。 | A map hangs on the wall.
+房间 里 有 两 张 床。 | There are two beds in the room.
+请 给 我 一 张 票。 | One ticket, please.
+那 张 桌子 太 小 了。 | That table is too small.
+他 写 了 三 张 纸。 | He wrote three pages.
+
+@grammar 把 | 把: doing something to the object
+> **把** brings the object before the verb when you do something to it with a result: 把门开开, 把书放到桌子上, 把茶喝完. The verb never stands alone after 把: it has a result (完, 好, 错), a place (在, 到) or 一 下.
+把 门 开开。 | Open the door.
+我 把 书 放到 书架 上 了。 | I put the book on the shelf.
+
+@grammar 被 | 被: what happened to something
+> **被** turns it round: the thing comes first, then 被 and who did it: 手机被他拿走了. The doer can be left out: 那本书被借走了. Like 把, the verb usually has a result.
+我 的 面包 被 吃 了！ | My bread has been eaten!
+门 被 风 推开 了。 | The door was pushed open by the wind.
+
+@grammar 放到 | 放到, 搬到: putting and moving to a place
+> **到** after a verb tells where something ends up: 放到桌子上, 搬到北京. With 把 it says where you put it: 把书放到书架上.
+把 椅子 搬 到 外边 去。 | Move the chair outside.
+
+@dialog Moving day
+Mama：大家 来 帮忙！ 先 把 书架 搬 到 那边。 | Everyone, come and help! First move the bookshelf over there.
+Ming：好。 书 呢？ | OK. And the books?
+Mama：把 书 都 放到 书架 上。 | Put all the books on the shelf.
+Ming：衣服 挂 在 哪儿？ | Where do the clothes hang?
+Mama：衣架 在 门 后边， 你 来 整理 一 下。 | The hangers are behind the door — you sort them.
+
+@dialog Where's my phone?
+Anna：我 的 手机 呢？ 是 不 是 被 你 拿 走 了？ | Where's my phone? Did you take it?
+Yue：没 有。 你 把 它 放到 哪儿 了？ | No. Where did you put it?
+Anna：我 不 记得 了 … 啊， 被 书 压 着 呢！ | I don't remember… ah, it's under the books!
+
+@dialog At the repair shop
+Ming：您 好， 我 的 自行车 坏 了， 能 修 吗？ | Hello, my bike's broken — can you fix it?
+Shifu：能。 你 按 一 下 这儿 … 这里 要 补 一 下。 | Yes. Press here… this bit needs patching.
+Ming：明天 能 修 好 吗？ | Can it be fixed by tomorrow?
+Shifu：当然 可以。 | Of course.

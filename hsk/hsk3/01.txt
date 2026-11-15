@@ -1,0 +1,213 @@
+goal: Begin HSK 3: say when things start and end, what you hope, need and decide, and talk about lessons, homework and tests.
+
+@word 开始 | to begin; to start; beginning
+开始。 | Begin.
+我们 开始 上课 吧。 | Let's start the class.
+新 的 一 年 开始 了。 | A new year has begun.
+电影 几 点 开始？ | What time does the movie start?
+我 从 今天 开始 学 HSK 三 级。 | I'm starting level three today.
+开始 的 时候， 我 听 不 懂。 | At the beginning I couldn't understand.
+他 开始 喜欢 运动 了。 | He has started to like sports.
+开始 下雨 了。 | It's started raining.
+
+@word 结束 | to end; to finish
+结束 了。 | It's over.
+会 结束 了 吗？ | Is the meeting over?
+课 几 点 结束？ | What time does class end?
+课 结束 以后， 我们 去 吃饭。 | After class we'll go and eat.
+今天 的 工作 结束 了。 | Today's work is done.
+放假 快 结束 了。 | The holidays are almost over.
+音乐 结束 的 时候， 大家 都 站 起来 了。 | When the music ended, everyone stood up.
+这 本 书 怎么 结束 的？ | How does this book end?
+
+@word 继续 | to continue; to go on
+继续。 | Go on.
+请 继续 说。 | Please go on.
+我们 明天 继续 学习。 | We'll continue studying tomorrow.
+雨 还 在 继续 下。 | It's still raining.
+休息 一 会儿， 再 继续 工作。 | Rest a bit, then carry on working.
+你 要 继续 学 汉语 吗？ | Are you going to keep learning Chinese?
+他 没 说话， 继续 看 书。 | He didn't say anything and kept reading.
+我们 继续 往 前 走 吧。 | Let's keep walking ahead.
+
+@word 希望 | to hope; hope; wish
+希望。 | Hope.
+我 希望 明天 不 下雨。 | I hope it doesn't rain tomorrow.
+希望 你 喜欢。 | I hope you like it.
+我 希望 能 去 中国 看看。 | I hope I can go and see China.
+妈妈 希望 我 做 医生。 | Mom hopes I'll be a doctor.
+希望 我们 还 能 见面。 | I hope we can meet again.
+孩子们 是 我们 的 希望。 | Children are our hope.
+你 有 什么 希望？ | What do you hope for?
+
+@word 需要 | to need; needs
+需要。 | Need.
+你 需要 什么？ | What do you need?
+我 需要 一 杯 水。 | I need a glass of water.
+你 不 需要 买 新 的。 | You don't need to buy a new one.
+这 件 事 需要 时间。 | This will take time.
+需要 我 帮忙 吗？ | Do you need my help?
+学 汉语 需要 每 天 练习。 | Learning Chinese takes daily practice.
+我们 需要 的 东西 不 多。 | We don't need much.
+
+@word 决定 | to decide; decision
+决定。 | Decide.
+你 决定 了 吗？ | Have you decided?
+我 决定 明年 去 北京。 | I've decided to go to Beijing next year.
+这 件 事 你 来 决定 吧。 | You decide this one.
+他 还 没 决定 买 哪 个。 | He hasn't decided which one to buy yet.
+这 是 一 个 很 好 的 决定。 | That's a very good decision.
+我们 决定 一起 去 教会。 | We decided to go to church together.
+你 的 决定 是 对 的。 | Your decision is right.
+
+@word 当然 | of course; naturally
+当然。 | Of course.
+当然 可以！ | Of course you can!
+你 来 吗？ 当然 来！ | Are you coming? Of course!
+我 当然 记得 你。 | Of course I remember you.
+他 是 中国 人， 当然 会 说 中文。 | He's Chinese, so of course he speaks Chinese.
+当然， 你 也 可以 不 去。 | Of course, you can also not go.
+朋友 生病 了， 我们 当然 要 去 看看 他。 | Our friend is sick, so of course we'll go and see him.
+下雨 了， 当然 不 去 公园 了。 | It's raining, so of course we're not going to the park.
+
+@word 其实 | actually; in fact
+其实。 | Actually.
+其实 我 不 饿。 | Actually I'm not hungry.
+其实 他 不 是 老师。 | In fact he isn't a teacher.
+这 个 字 看 起来 很 难， 其实 不 难。 | This character looks hard, but actually it isn't.
+其实， 我 也 不 知道。 | Actually, I don't know either.
+大家 都 说 他 很 忙， 其实 他 很 有 时间。 | Everyone says he's busy; actually he has plenty of time.
+其实 我 很 想 你。 | Actually I miss you a lot.
+其实 学 汉语 没 那么 难。 | Actually learning Chinese isn't that hard.
+
+@word 就是 | exactly; just; simply; that is
+就是。 | Exactly.
+就是 他！ | It's him!
+我 就是 王 老师。 | I'm Teacher Wang.
+这 就是 我 的 家。 | This is my home.
+对， 就是 这样。 | Yes, just like that.
+我 就是 想 看看。 | I just want to take a look.
+他 什么 都 好， 就是 太 忙 了。 | He's good in every way — just too busy.
+这 本 书 就是 我们 的 新 教材。 | This book is our new textbook.
+
+@word 只是 | only; just; merely
+只是。 | Only.
+我 只是 问问。 | I'm just asking.
+这 只是 一 个 开始。 | This is only a beginning.
+他 不 是 不 想 来， 只是 太 忙 了。 | It's not that he doesn't want to come — he's just too busy.
+我 只是 一 个 学生。 | I'm only a student.
+这 只是 我 的 想法。 | This is just my idea.
+衣服 很 好看， 只是 有点儿 贵。 | The clothes look nice, only they're a bit expensive.
+没 什么， 只是 有点儿 累。 | It's nothing — I'm just a bit tired.
+
+@word 每 | each; every
+每。 | Every.
+我 每 天 都 学 汉语。 | I study Chinese every day.
+每 个 人 都 有 一 本 教材。 | Everyone has a textbook.
+每 课 有 十 几 个 生词。 | Each lesson has a dozen or so new words.
+他 每 个 星期天 都 去 教会。 | He goes to church every Sunday.
+每 次 见面， 他 都 很 高兴。 | He's happy every time we meet.
+每 天 早上 我 喝 一 杯 茶。 | I drink a cup of tea every morning.
+这里 每 个 月 都 很 热。 | Every month is hot here.
+
+@word 容易 | easy; likely to
+容易。 | Easy.
+这 个 字 很 容易。 | This character is easy.
+汉语 不 容易， 但是 很 有意思。 | Chinese isn't easy, but it's interesting.
+说 很 容易， 做 很 难。 | Easy to say, hard to do.
+冬天 容易 生病。 | It's easy to get sick in winter.
+这 个 问题 容易 回答。 | This question is easy to answer.
+找到 他 家 不 容易。 | His home isn't easy to find.
+累 的 时候 容易 写 错 字。 | When you're tired you easily write characters wrong.
+
+@word 简单 | simple
+简单。 | Simple.
+这 很 简单。 | This is simple.
+请 说 得 简单 一点儿。 | Please say it more simply.
+他 的 房间 很 简单。 | His room is simple.
+今天 的 功课 很 简单 吗？ 不 简单！ | Is today's homework simple? Not at all!
+我们 的 晚饭 很 简单。 | Our dinner is simple.
+这 件 事 没 那么 简单。 | This matter isn't that simple.
+简单 的 字 先 学。 | Learn the simple characters first.
+
+@word 课程 | course; curriculum
+课程。 | Course.
+三 级 的 课程 开始 了。 | The level-three course has started.
+这 个 课程 有 五十六 课。 | This course has fifty-six lessons.
+你 喜欢 这 个 课程 吗？ | Do you like this course?
+这 个 课程 需要 一 年。 | This course takes a year.
+新 课程 比 以前 的 难。 | The new course is harder than the old one.
+我 想 上 汉语 课程。 | I want to take a Chinese course.
+课程 结束 以后 有 考试。 | There's a test after the course ends.
+
+@word 教材 | teaching materials; textbook
+教材。 | Textbook.
+这 是 我们 的 新 教材。 | This is our new textbook.
+教材 在 桌子 上。 | The textbook is on the table.
+老师 给 我们 发 了 教材。 | The teacher handed out the textbooks.
+这 本 教材 很 有意思。 | This textbook is interesting.
+你 的 教材 是 你 的 还是 你 哥哥 的？ | Is that textbook yours or your brother's?
+上课 别 忘 了 带 教材。 | Don't forget to bring your textbook to class.
+这 本 教材 里 有 很 多 图片。 | This textbook has lots of pictures.
+
+@word 预习 | to prepare a lesson before class
+预习。 | Prepare.
+上课 以前 要 预习。 | Prepare before class.
+你 预习 了 吗？ | Have you prepared?
+我 每 天 晚上 预习 新 课。 | Every evening I prepare the new lesson.
+预习 的 时候， 先 看 生词。 | When preparing, look at the new words first.
+预习 了， 上课 就 容易 了。 | If you've prepared, class is easier.
+今天 我 没 时间 预习。 | I had no time to prepare today.
+老师 让 我们 预习 第二 课。 | The teacher told us to prepare lesson two.
+
+@word 功课 | homework; schoolwork
+功课。 | Homework.
+你 的 功课 做 完 了 吗？ | Have you finished your homework?
+今天 的 功课 很 多。 | There's a lot of homework today.
+做 完 功课 再 玩儿。 | Finish your homework, then play.
+他 的 功课 一直 很 好。 | His schoolwork has always been good.
+我 晚上 八 点 开始 做 功课。 | I start my homework at eight in the evening.
+这 个 功课 需要 两 个 小时。 | This homework takes two hours.
+妈妈 每 天 看 我 的 功课。 | Mom checks my homework every day.
+
+@word 听力 | listening (ability); listening test
+听力。 | Listening.
+我 的 听力 不 太 好。 | My listening isn't very good.
+听力 考试 开始 了。 | The listening test has started.
+你 要 多 练习 听力。 | You should practice listening more.
+听 中文 歌 对 听力 很 好。 | Listening to Chinese songs is good for listening.
+他 的 听力 比 我 好。 | His listening is better than mine.
+听力 考试 你 都 听 懂 了 吗？ | Did you understand all of the listening test?
+我 每 天 练习 听力 半 个 小时。 | I practice listening half an hour a day.
+
+@grammar 开始 | 开始 and 结束: beginning and end
+> **开始** can stand alone (电影开始了) or take a verb after it: 开始下雨, 开始学习. **结束** is its opposite: 课结束了. Both often go with 以前, 以后 and 的时候.
+电影 开始 以前， 我们 吃 了 饭。 | Before the movie started we ate.
+课 结束 以后， 我们 继续 说话。 | After class ended we kept talking.
+
+@grammar 其实 | 其实: actually
+> **其实** tells the real situation, usually after something that seems different: 看起来很难，其实不难. It goes at the start of a sentence or before the verb.
+大家 都 说 很 远， 其实 很 近。 | Everyone says it's far, but actually it's close.
+
+@grammar 只是 | 就是 and 只是
+> **就是** points to exactly this one: 就是他 “it's him”. After a good point, **就是** or **只是** add a small “but”: 很好，就是太贵 / 只是有点儿贵. **只是** also means “merely”: 只是问问.
+这 个 房间 很 好， 就是 小 了 一点儿。 | This room is nice — just a little small.
+我 不 是 不 想 去， 只是 没 时间。 | It's not that I don't want to go; I just don't have time.
+
+@dialog First day of HSK 3
+Laoshi：大家 好！ 今天 我们 开始 三 级 课程。 | Hello everyone! Today we begin the level-three course.
+Ming：老师， 我们 需要 买 新 教材 吗？ | Teacher, do we need to buy the new textbook?
+Laoshi：当然 需要。 每 课 以前 请 预习 生词。 | Of course. Please prepare the new words before each lesson.
+Anna：功课 多 吗？ | Is there much homework?
+Laoshi：不 多， 其实 每 天 半 个 小时 就 可以。 | Not much — actually half an hour a day is enough.
+
+@dialog After the test
+Mama：考试 结束 了？ 难 吗？ | Is the test over? Was it hard?
+Ming：不 难， 就是 听力 有点儿 快。 | Not hard — just the listening was a bit fast.
+Mama：没关系， 继续 努力。 | Never mind — keep working at it.
+Ming：我 决定 每 天 听 中文 歌。 | I've decided to listen to Chinese songs every day.
+
+@dialog Hopes for the year
+Anna：新 的 一 年， 你 有 什么 希望？ | What are your hopes for the new year?
+Yue：我 希望 能 去 中国 学习 … 只是 一 个 希望。 | I hope I can go to China to study… it's only a hope.
+Anna：当然 可以！ 你 的 汉语 越来越 好 了。 | Of course you can! Your Chinese keeps getting better.

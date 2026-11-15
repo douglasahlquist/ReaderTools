@@ -138,3 +138,50 @@ word lists near the top of `bible_pages.py`.
 
 All public domain, except the SBLGNT, which is free to use with the attribution its pages carry.
 Upstream: scrollmapper/bible_databases, TehShrike/world-english-bible (WEB), morphgnt/sblgnt.
+
+## Study-language pages: `scripture_pages.py`
+
+Whole chapters or books in one study language with that language's reading aids — for Chinese,
+simplified Hanzi, pinyin and the traditional Hanzi under them — without the Greek and English
+rows of the passage editions (add translations with `--with`).
+
+```sh
+python3 bible/scripture_pages.py "Romans 12"                    # one chapter → romans-12.chinese.md
+python3 bible/scripture_pages.py Mark                           # the whole book (16 pages)
+python3 bible/scripture_pages.py "John 3" --with web            # with an English row
+python3 bible/scripture_pages.py "John 3" --script traditional  # traditional first (john-3.chinese-trad.md)
+python3 bible/scripture_pages.py "John 3" --keep-notes          # keep the CUV's （或作…） （有古卷…） notes
+python3 bible/scripture_pages.py --languages
+```
+
+The Chinese text is the 和合本 from BibleSources: `cuv` where it has the book, else `cut` (all 66
+books). Each page is listed in the 经文 Passages list as the chapter's “中文 Chinese” edition.
+
+Other languages plug in as kits in `bible/languages/`: copy `template.py` (notes there on Korean
+and Thai), fill in the text, sound line and second script, and add the class to `KITS`.
+
+
+## The whole Bible: `new_testament.py` and `old_testament.py`
+
+One page per chapter, every chapter of the Bible: simplified Hanzi, pinyin and traditional Hanzi, the
+original (Greek SBLGNT or Hebrew WLC), the King James Version, and Korean (개역한글), Vietnamese
+(1934), Thai (ThaiKJV), French (Martin 1744) and German (Luther 1912) under each verse. New Testament
+pages are `<book>-<chapter>.kjv.md`, Old Testament pages `<book>-<chapter>.wlc.md`; the app shows the
+versions each user picks (Settings › Bible Versions). Both share `testament_pages.py`.
+
+Nothing is added twice: complete pages are left alone, pages with fewer rows are rebuilt in place, and
+other editions aren't touched. Missing source texts are downloaded into BibleSources first.
+
+```sh
+python3 bible/new_testament.py --dry-run          # what it would build
+python3 bible/new_testament.py                    # Matthew … Revelation (260 chapters)
+python3 bible/old_testament.py                    # Genesis … Malachi (929 chapters)
+python3 bible/old_testament.py Genesis Psalms     # only these books
+python3 bible/new_testament.py --languages krv,martin   # only these other languages
+python3 bible/old_testament.py --no-languages     # Chinese, original and English only
+python3 bible/old_testament.py --english none     # no English row
+python3 bible/new_testament.py --greek tr         # Textus Receptus (no accents or breathings)
+python3 bible/new_testament.py --force            # rebuild every page
+```
+
+The Thai (CC BY-NC-ND 4.0) and SBLGNT (CC BY 4.0) credit lines go at the bottom of every page.

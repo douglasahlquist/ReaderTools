@@ -1,0 +1,20 @@
+@word 题目 | topic; title; question (on a test)
+题目。 | Question.
+这 个 题目 很 难。 | This question is hard.
+你 看 懂 题目 了 吗？ | Did you understand the question?
+请 先 读 题目。 | Please read the question first.
+今天 的 题目 是 什么？ | What's the title of this essay?
+最后 一 个 题目 我 没 做。 | I didn't do the last question.
+老师 给 了 我们 一 个 新 题目。 | The teacher gave us a new topic.
+题目 不 多， 但是 都 不 容易。 | There aren't many questions, but none is easy.
+
+@word 试题 | exam question; test paper
+试题。 | Test questions.
+今天 的 试题 很 难。 | Today's test questions were hard.
+试题 一共 有 二十 个。 | There are twenty questions in all.
+老师 在 写 试题。 | The teacher is writing the test.
+这些 试题 我们 都 学 过。 | We've studied all these questions.
+你 做 完 试题 了 吗？ | Have you finished the test?
+考试 以前， 老师 给 了 我们 一些 试题 练习。 | Before the exam the teacher gave us some practice questions.
+试题 不 难， 只是 时间 太 短。 | The questions weren't hard — there just wasn't enough time.
+

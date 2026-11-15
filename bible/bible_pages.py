@@ -470,7 +470,13 @@ def edition_title(editions, name):
     """Study, Classic … from editions.json; a version's own label (KJV, 개역한글) for a version edition."""
     if name in editions:
         return editions[name].get("title", name.capitalize())
-    return VERSIONS[name]["label"] if name in VERSIONS else name.capitalize()
+    if name in VERSIONS:
+        return VERSIONS[name]["label"]
+    try:                                       # a language kit's edition (scripture_pages.py): 中文 Chinese
+        from languages import EDITION_TITLES
+        return EDITION_TITLES.get(name, name.capitalize())
+    except ImportError:
+        return name.capitalize()
 
 
 def default_text_repo():

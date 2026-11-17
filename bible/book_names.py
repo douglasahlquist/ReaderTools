@@ -3,7 +3,8 @@
 book's name, a romanization where the script needs one (Korean, Thai), and the name in the
 comparison language (English for now: the app's default language). Writes
 ChineseReaderText/bible/books/<code>-ot.md and -nt.md, and the 书卷 Books of the Bible section of
-bible/README.md: one #### heading per language (Chinese first, with its existing pages).
+bible/README.md: one #### heading per language (English first, compared with Chinese; then Chinese,
+with its existing pages; then the others).
 
     python3 bible/book_names.py                  # every language
     python3 bible/book_names.py --languages ko,fr
@@ -98,7 +99,7 @@ LANGUAGES = {
                "2. Thessalonicher", "1. Timotheus", "2. Timotheus", "Titus", "Philemon", "Hebräer", "Jakobus",
                "1. Petrus", "2. Petrus", "1. Johannes", "2. Johannes", "3. Johannes", "Judas", "Offenbarung"]),
 }
-ORDER = ["ko", "vi", "th", "fr", "de"]
+ORDER = ["en", "ko", "vi", "th", "fr", "de"]
 
 # Korean in Revised Romanization, one entry per word (made once with korean-romanizer, so the
 # script needs no extra package).
@@ -188,11 +189,44 @@ def page(code, info, testament, compare):
     return "\n".join(lines)
 
 
+# English, compared with Chinese (the app's language): the Chinese name and its pinyin with each book.
+ENGLISH = dict(name="English", ot="Books of the Old Testament", nt="Books of the New Testament")
+CHINESE_TITLES = {"ot": ("旧约圣经书卷", "Jiù yuē shèng jīng shū juàn"), "nt": ("新约圣经书卷", "Xīn yuē shèng jīng shū juàn")}
+CHINESE_GROUPS = {"ot": [("律法书", "Lǜ fǎ shū"), ("历史书", "Lì shǐ shū"), ("诗歌智慧书", "Shī gē zhì huì shū"),
+                         ("大先知书", "Dà xiān zhī shū"), ("小先知书", "Xiǎo xiān zhī shū")],
+                  "nt": [("福音书", "Fú yīn shū"), ("历史书", "Lì shǐ shū"), ("保罗书信", "Bǎo luó shū xìn"),
+                         ("普通书信", "Pǔ tōng shū xìn"), ("预言书", "Yù yán shū")]}
+
+
+def english_page(testament):
+    """The English names, each with the Chinese name and its pinyin (bible/books/en-ot.md, -nt.md)."""
+    groups = OT_GROUPS if testament == "ot" else NT_GROUPS
+    chinese, pinyin = CHINESE_TITLES[testament]
+    # No romanization line over English: the Chinese (with its pinyin) is the comparison.
+    lines = ["<!-- reader: lang=en-US -->", "", f"# {ENGLISH[testament]} |  | {chinese} {pinyin}", ""]
+    for ((first, last), english), (group, group_pinyin) in zip(groups, CHINESE_GROUPS[testament]):
+        lines += [f"## {english} |  | {group} {group_pinyin}", "", "<!-- reader: table=glossary -->",
+                  "| Name | Romanization | 中文 |", "|---|---|---|"]
+        for n in range(first, last + 1):
+            name, hanzi, reading, _ = bs.BOOKS[n - 1]
+            lines.append(f"| {name} |  | {hanzi} {reading} |")
+        lines.append("")
+    return "\n".join(lines)
+
+
 def readme_section(codes):
-    lines = ["### 书卷 Books of the Bible", "", "#### 中文 Chinese", "",
-             "- [旧约 Old Testament](01-jiu-yue-shu-juan.md)",
-             "- [新约 New Testament](02-xin-yue-shu-juan.md)", ""]
+    """English first, then Chinese, then the other languages."""
+    lines = ["### 书卷 Books of the Bible", ""]
+    if "en" in codes:
+        lines += ["#### English", "",
+                  "- [Old Testament](books/en-ot.md)",
+                  "- [New Testament](books/en-nt.md)", ""]
+    lines += ["#### 中文 Chinese", "",
+              "- [旧约 Old Testament](01-jiu-yue-shu-juan.md)",
+              "- [新约 New Testament](02-xin-yue-shu-juan.md)", ""]
     for code in codes:
+        if code == "en":
+            continue
         info = LANGUAGES[code]
         lines += [f"#### {info['name']}", "",
                   f"- [{info['ot']} · Old Testament](books/{code}-ot.md)",
@@ -208,6 +242,8 @@ def main():
     a = p.parse_args()
     codes = [c.strip() for c in a.languages.split(",") if c.strip()]
     for code in codes:
+        if code == "en":
+            continue
         if code not in LANGUAGES:
             p.error(f"unknown language: {code} (known: {', '.join(ORDER)})")
         assert len(LANGUAGES[code]["books"]) == 66, (code, len(LANGUAGES[code]["books"]))
@@ -215,12 +251,17 @@ def main():
     os.makedirs(out, exist_ok=True)
     for code in codes:
         for testament in ("ot", "nt"):
+            text = english_page(testament) if code == "en" else page(code, LANGUAGES[code], testament, COMPARE[a.compare])
             with open(os.path.join(out, f"{code}-{testament}.md"), "w", encoding="utf-8") as f:
-                f.write(page(code, LANGUAGES[code], testament, COMPARE[a.compare]) + "\n")
+                f.write(text + "\n")
     readme = os.path.join(a.text_repo, "bible", "README.md")
     text = open(readme, encoding="utf-8").read()
     # Replace everything from the Books heading up to the Passages heading.
-    text = re.sub(r"### 书卷 Books of the Bible\n.*?(?=### 经文 Passages)", readme_section(codes) + "\n",
+    section = readme_section(codes)
+    # The Naskapi lists come from workspace_naskapi (scripts/naskapi_book_lists.py): keep them listed.
+    if os.path.exists(os.path.join(out, "nsk-ot.md")):
+        section += "\n#### Naskapi\n\n- [Old Testament](books/nsk-ot.md)\n- [New Testament](books/nsk-nt.md)\n"
+    text = re.sub(r"### 书卷 Books of the Bible\n.*?(?=### 经文 Passages)", lambda _: section + "\n",
                   text, count=1, flags=re.S)
     with open(readme, "w", encoding="utf-8") as f:
         f.write(text)

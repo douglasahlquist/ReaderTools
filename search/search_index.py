@@ -35,6 +35,10 @@ def cells(line):
     return [p.strip().replace("\\|", "|") for p in parts]
 
 
+# what the pages show where a version has no text for a verse (library/patch_pages.py): not verse text
+NOTICE = re.compile(r"^\((?:omitted in this edition|missing — possibly a data error)|^（(?:并入|併入)|^\( bìng rù")
+
+
 def split_number(cell):
     m = re.match(r"^(\d+)(?:\s+(.*))?$", cell.strip())
     return (m.group(1), (m.group(2) or "").strip()) if m else (None, cell.strip())
@@ -106,6 +110,8 @@ def main():
                         continue
                     n, text = split_number(cell)
                     text = text if n == number else cell.strip()
+                    if NOTICE.match(text):
+                        continue
                     if not text:
                         continue
                     if version in ("simplified", "traditional"):

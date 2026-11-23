@@ -50,9 +50,13 @@ BOOKS = [  # slug, USFM, English name, testament
 SLUG2USFM = {b[0]: b[1] for b in BOOKS}
 OT = {b[1] for b in BOOKS if b[3] == "OT"}
 
-# new key -> (BibleSources version, legacy id in versions.json); None = from search/<legacy>.tsv
+# new key -> (BibleSources version, legacy id in versions.json); None = from search/<legacy>.tsv.
+# A tuple of BibleSources versions: the first one there (downloaded first, then the "-input" import).
 BIBLE = {
  "en-kjv": ("kjv", "kjv"), "en-web": ("web", "web"), "en-bbe": ("bbe", "bbe"),
+ "en-asv": (("asv", "asv-input"), "asv"), "en-ylt": (("ylt", "ylt-input"), "ylt"),
+ "en-darby": (("darby", "darby-input"), "darby"), "en-webster": (("wb", "webster", "wbt", "wb-input"), "webster"),
+ "en-akjv": (("akjv", "akjv-input"), "akjv"),
  "zh-cuv-s": ("cuv", "simplified"), "zh-cuv-t": ("cuv", "traditional"),
  "hbo-wlc": ("wlc", "original"), "grc-sblgnt": ("sblgnt", "original"), "grc-tr": ("tr", "original"),
  "ko-krv": ("krv", "krv"), "th-kjv": ("thkjv", "thkjv"), "vi-1934": ("vietnamese", "vietnamese"),
@@ -61,7 +65,12 @@ BIBLE = {
 }
 NAMES = {"hbo-wlc": ("Westminster Leningrad Codex (WLC)", "WLC", "hbo", "Public domain", "masoretic"),
          "grc-sblgnt": ("SBL Greek New Testament (SBLGNT)", "SBLGNT", "grc", "CC BY 4.0", "kjv"),
-         "grc-tr": ("Textus Receptus (1550/1894)", "TR", "grc", "Public domain", "kjv")}
+         "grc-tr": ("Textus Receptus (1550/1894)", "TR", "grc", "Public domain", "kjv"),
+         "en-asv": ("American Standard Version (ASV, 1901)", "ASV", "en", "Public domain", "kjv"),
+         "en-ylt": ("Young's Literal Translation (YLT, 1898)", "YLT", "en", "Public domain", "kjv"),
+         "en-darby": ("Darby Bible (1890)", "Darby", "en", "Public domain", "kjv"),
+         "en-webster": ("Webster's Bible (1833)", "Webster", "en", "Public domain", "kjv"),
+         "en-akjv": ("American King James Version (AKJV)", "AKJV", "en", "Public domain", "kjv")}
 QURAN = {
  "quran-arabic": "ar-hafs", "quran-romanization": "ar-latn-hafs",
  "quran-riwaya-shubah": "ar-shubah", "quran-riwaya-warsh": "ar-warsh", "quran-riwaya-qalun": "ar-qalun",
@@ -107,6 +116,21 @@ def write_json(path, obj):
 
 def clean(text):
     return re.sub(r"[\t\r\n]+", " ", str(text)).strip()
+
+
+def resolve_source(src):
+    """A BibleSources version name as given, or the first of a tuple that has any book; "" when
+    none of them does."""
+    if src is None or isinstance(src, str):
+        return src
+    for name in src:
+        for n in range(1, len(BOOKS) + 1):
+            try:
+                if os.path.exists(bs.source_path(name, n)):
+                    return name
+            except Exception:
+                break                               # not a version BibleSources knows
+    return ""
 
 
 def bible_chapters(lib, key, src, oid, cache):
@@ -156,6 +180,8 @@ def main(lib):
     pinyin = {}
 
     for key, (src, oid) in BIBLE.items():
+        src = resolve_source(src)
+        if src == "": print("skip (not in BibleSources):", key); continue
         chapters = bible_chapters(lib, key, src, oid, pinyin)
         if not chapters: print("skip (no data):", key); continue
         n = 0
@@ -164,7 +190,7 @@ def main(lib):
             with open(f"{out}/bible/{key}/{usfm}/{ch}.tsv", "w", encoding="utf-8") as f:
                 for row in rows:
                     f.write("\t".join(clean(c) for c in row) + "\n"); n += 1
-        o = old[oid]
+        o = old.get(oid, {})
         name, short, lang, lic, numbering = NAMES.get(key, (o.get("title"), o.get("short"), o.get("language", ""),
                                                             o.get("license"), "kjv"))
         meta = {"key": key, "collection": "bible", "name": name, "short": short,
@@ -221,8 +247,8 @@ def main(lib):
       "required": ["en-kjv", "zh-cuv-s", "zh-cuv-t"],
       "_about": "required: always in the app and its default view; default: in the default view; "
                 "offered: listed for adding; hidden: never listed, added or searched",
-      "default":  ["en-kjv", "zh-cuv-s", "zh-cuv-t"],
-      "offered":  [k for _, k, _ in written if k not in ("en-kjv", "zh-cuv-s", "zh-cuv-t", "en-sahih")],
+      "default":  ["en-kjv", "zh-cuv-s", "zh-cuv-t", "hbo-wlc", "grc-sblgnt"],
+      "offered":  [k for _, k, _ in written if k not in ("en-kjv", "zh-cuv-s", "zh-cuv-t", "hbo-wlc", "grc-sblgnt", "en-sahih")],
       "hidden":   ["en-sahih"]})
     for c, k, n in written: print(f"{c:6} {k:16} {n:6} verses")
 
